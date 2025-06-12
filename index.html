@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Conexão Cidade-Campo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz: Conexão entre Cidade e Campo</h1>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        
+        <div class="question-container" id="question-container">
+            <h2 id="question-text">Carregando perguntas...</h2>
+            <div class="options-container" id="options-container"></div>
+        </div>
+        
+        <div class="controls-container">
+            <button id="prev-btn" class="control-btn">Anterior</button>
+            <button id="next-btn" class="control-btn">Próxima</button>
+            <button id="submit-btn" class="control-btn">Enviar</button>
+        </div>
+        
+        <div class="result-container" id="result-container" style="display: none;">
+            <h2>Seu Resultado</h2>
+            <p id="score-text">Você acertou <span id="score">0</span> de <span id="total-questions">0</span> perguntas!</p>
+            <button id="restart-btn" class="control-btn">Reiniciar Quiz</button>
+        </div>
+    </div>
+
+    <script src="pergunta.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
